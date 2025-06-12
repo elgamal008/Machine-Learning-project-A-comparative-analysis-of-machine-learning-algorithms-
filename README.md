@@ -1,6 +1,3 @@
-Here’s a polished version of the project description tailored for a GitHub repository:
-
----
 
 ##  A Comparative Analysis of Machine Learning Algorithms
 
