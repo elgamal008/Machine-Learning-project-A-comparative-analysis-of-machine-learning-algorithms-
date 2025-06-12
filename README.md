@@ -1,0 +1,2 @@
+# Machine-Learning-project-A-comparative-analysis-of-machine-learning-algorithms-
+Here's a version under 350 characters, ideal for a GitHub description:  > A comparative analysis of ML algorithms (KNN, Naive Bayes, SVM, Decision Tree) on a custom dataset. Includes data preprocessing, model implementation, evaluation using metrics like accuracy and F1-score, and insights on performance differences.
