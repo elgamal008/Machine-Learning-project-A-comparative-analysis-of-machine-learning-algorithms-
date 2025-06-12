@@ -30,5 +30,27 @@ This project presents a comparative study of four popular machine learning algor
   * Performance comparison & discussion
 * Visualizations and insights summarizing model behavior
 
+Problems Faced During Preprocessing:
+Missing Values:
+Several columns contained missing data, especially in key features needed for model training. This required careful handling to avoid losing important patterns. Techniques like imputation (mean/mode) and row/column removal were considered based on missingness severity and feature relevance.
+
+Inconsistent Categorical Data:
+Categorical features had inconsistent labels due to variations in text formatting (e.g., capitalization, typos, extra spaces). These inconsistencies had to be normalized through string cleaning and label standardization to ensure correct one-hot encoding and proper model input.
+
+Imbalanced Classes:
+The target variable exhibited a class imbalance, which would have biased models like Decision Tree or KNN toward the majority class. To address this, techniques such as SMOTE (Synthetic Minority Oversampling Technique) and class weighting were explored to ensure fair model training.
+
+Non-Numeric Features:
+Several machine learning algorithms require numeric input. All categorical features had to be encoded (using one-hot or label encoding), which increased the dimensionality and required careful feature selection to avoid overfitting.
+
+Outliers and Noise:
+Numerical features contained outliers that could skew distance-based algorithms like KNN or SVM. Z-score and IQR-based filtering were used to detect and, where necessary, cap or remove extreme values.
+
+Scaling Issues:
+Features had different units and magnitudes. Since SVM and KNN are sensitive to feature scales, normalization or standardization was crucial to ensure fair distance calculations and convergence in optimization.
+
+Data Leakage Risk:
+Ensuring preprocessing was done only on training data (especially scaling and imputation) before applying it to the test set was essential to avoid data leakage and inflated performance metrics.
+
 ---
 
